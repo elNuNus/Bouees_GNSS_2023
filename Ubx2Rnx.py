@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-
-'''
+# -*- coding: utf-8 -*-
+"""
 
 This script is used to convert UBX files to RINEX files. [more documentation needed]
 
 @author: utilisateur?
 
-'''
+"""
 
 import sys
 import os

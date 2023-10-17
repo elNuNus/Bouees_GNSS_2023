@@ -2,7 +2,8 @@
 """
 Created on Fri Nov 18 11:27:09 2022
 
-This script is used to convert UBX files to RINEX files. [more documentation needed]
+This script is used to log data from a GNSS receiver. Every T_NMEA minutes, the data is saved in a new folder.
+Each folder contains a .ubx file (RAW data) and a .txt file (NMEA data).
 
 @author: utilisateur
 """

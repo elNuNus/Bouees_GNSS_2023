@@ -2,6 +2,8 @@
 """
 Created on Fri Dec  2 09:16:18 2022
 
+This script is used to convert UBX files to RINEX files. [more documentation needed]
+
 @author: utilisateur
 """
 
@@ -57,9 +59,10 @@ def Ubx2ConcatRnx(root_dir,
               verbose=verbose)
 
 if __name__ == "__main__":
-    folder_list = ['C:/Users/utilisateur/Desktop/Data_guerledan_clean/semaine_2/BoueeGNSS_Centipede/data_clean']
-    folder_list = ['C:/Users/utilisateur/Desktop/Data_guerledan_clean/semaine_2/data_bouee_05022023_10022023/data']
-    folder_list = ['C:/Users/utilisateur/Desktop/Data_guerledan_clean/semaine_2/data_bouee_05022023_10022023/data']
+    # folder_list = ['C:/Users/utilisateur/Desktop/Data_guerledan_clean/semaine_2/BoueeGNSS_Centipede/data_clean']
+    # folder_list = ['C:/Users/utilisateur/Desktop/Data_guerledan_clean/semaine_2/data_bouee_05022023_10022023/data']
+    # folder_list = ['C:/Users/utilisateur/Desktop/Data_guerledan_clean/semaine_2/data_bouee_05022023_10022023/data']
+    folder_list = ['C:']
     for folder in folder_list:
         for TADJ in [True, False]: # [True, False]:
             for version in [3.05, 2.11]: # [3.05, 2.11]:

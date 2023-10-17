@@ -1,3 +1,9 @@
+'''
+
+This script is used to do some acquisition, apparently. [more documentation needed]
+
+'''
+
 import os
 import time
 import shutil
@@ -7,7 +13,8 @@ time.sleep(120) # Wait for synchronisation
 
 
 # Path definition
-# root = r'C:\Users\33686\Desktop\ENSTAB\Cours\3A\Guerledan\testPy' # Test sous windows 
+# root = r'C:\Users\33686\Desktop\ENSTAB\Cours\3A\Guerledan\testPy' # Test sous windows
+
 root = r'.'
 
 pathData = f'{root}/data'

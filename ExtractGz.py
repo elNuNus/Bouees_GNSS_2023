@@ -2,6 +2,8 @@
 """
 Created on Fri Dec  2 11:09:43 2022
 
+This script is used to extract GZ files. [more documentation needed]
+
 @author: utilisateur
 """
 

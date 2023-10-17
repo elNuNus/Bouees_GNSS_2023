@@ -2,6 +2,8 @@
 """
 Created on Fri Nov 18 11:27:09 2022
 
+This script is used to convert UBX files to RINEX files. [more documentation needed]
+
 @author: utilisateur
 """
 

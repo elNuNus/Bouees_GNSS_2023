@@ -1,4 +1,8 @@
-from buoy import * 
+"""
+[More documentation needed]
+"""
+
+from buoy import *
 
 FLAG_DEPLOYED = '/boot/userConfigIsDeployed.txt'
 def main():

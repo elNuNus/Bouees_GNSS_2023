@@ -1,6 +1,7 @@
-#@Baptiste Menetrier
 """
-Build directories used to store data logged by the buoy. 
+Build directories used to store data logged by the buoy.
+
+@author: Baptiste Menetrier
 """
 
 import os

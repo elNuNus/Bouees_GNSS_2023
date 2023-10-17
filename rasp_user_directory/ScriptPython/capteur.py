@@ -1,3 +1,7 @@
+"""
+[More documentation needed]
+"""
+
 import bme280
 import smbus2
 from datetime import datetime

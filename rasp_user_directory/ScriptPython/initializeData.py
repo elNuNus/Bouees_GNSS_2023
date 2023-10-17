@@ -1,7 +1,8 @@
-#@Baptiste Menetrier
 """
 Initialize buffer files used to temporaly store data logged by the buoy and remove files from previous acquisition. 
-Warning: this function deletes all log files and should then used carefully. 
+Warning: this function deletes all log files and should then used carefully.
+
+@author: Baptiste Menetrier
 """
 
 import os

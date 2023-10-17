@@ -7,7 +7,9 @@ The Buoy class is both used:
     -   To write the configuration file then used on the RPi (with the configuration defined using the dedicated UI BuoyUI).
     -   To deploy the configuration on the RPi using the configuration file previously created (reboot routine on RPi). 
 
-Item classes handle the different item than can be configured by user. 
+Item classes handle the different item than can be configured by user.
+
+@author:
 """
 
 class Buoy:

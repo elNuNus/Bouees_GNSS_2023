@@ -12,9 +12,9 @@ Ubx2ConcatRnx prend en entrée :
   - Un booléen nommé TADJ. Si TADJ == True, les secondes des observarions des RINEX sont entières.
   - Le paramètre verbose n'a pas d'influence sur les traitements, il change juste le niveau d'informations retournées dans la console par l'algorithme
  - Ubx2ConcatRnx appelle plusieurs autres scripts :
-  - ExtractGz : extrait les UBX si ces derniers sont données sous un format compressé .gz
-  - Ubx2Rnx : convertit les UBX extraits en RNX (Chaque RNX créé correspond à un UBX)
-  - ConcatRnx : concatène les fichiers RNX. On obtient un fichier RNX avec toutes les observations, ainsi que des fichiers journaliers.s
+    - ExtractGz : extrait les UBX si ces derniers sont données sous un format compressé .gz
+    - Ubx2Rnx : convertit les UBX extraits en RNX (Chaque RNX créé correspond à un UBX)
+    - ConcatRnx : concatène les fichiers RNX. On obtient un fichier RNX avec toutes les observations, ainsi que des fichiers journaliers.s
 
 Pour Pride-PPP(vous devriez avoir le dossier Pride-PPP-Master)
 IMPORTANT: le contenu du fichier *.atx fourni doit être incorporé aux listes d'antennes (*.atx) du dossier Pride-PPP-Master/tables afin de comporter l'antenne utilisée

@@ -1,0 +1,4 @@
+logrotate state -- version 2
+"/home/pi/data/UBX/logUBX.ubx" 2023-9-19-11:0:2
+"/home/pi/BuyoData/NMEA/logNMEA.txt" 2022-10-24-19:0:1
+"/home/pi/BuyoData/UBX/logUBX.ubx" 2022-10-24-19:0:1

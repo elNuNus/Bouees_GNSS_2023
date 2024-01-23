@@ -1,21 +1,19 @@
-Ubx2ConcatRnx convertit les données UBX en RNX concaténés et journaliers.
-L'arborescense des fichiers est la suivante :
-  - L'ensemble des données est contenu dans le dossier nommé root_dir dans le code
-  - Ce dossier doit contenir un sous-dossier UBX dans lequel sont stockées les UBX
-  - Une fois le traitement fini, plusieurs dossiers RNX sont créés (RNX_3.05_TADJ par exemple)
-  - Ces dossiers contiennent :
-    - les RNX horaires correspondant aux UBX
-    - Un dossier concat dans lequel sont stockés les fichiers RNX concaténés (un fichier avec l'ensemble des informations et des fichiers journaliers)
-Ubx2ConcatRnx prend en entrée :
-  - le fichier root_dir
-  - la version de RINEX que l'on souhaite (3.05 par défaut)
-  - Un booléen nommé TADJ. Si TADJ == True, les secondes des observarions des RINEX sont entières.
-  - Le paramètre verbose n'a pas d'influence sur les traitements, il change juste le niveau d'informations retournées dans la console par l'algorithme
- - Ubx2ConcatRnx appelle plusieurs autres scripts :
-    - ExtractGz : extrait les UBX si ces derniers sont données sous un format compressé .gz
-    - Ubx2Rnx : convertit les UBX extraits en RNX (Chaque RNX créé correspond à un UBX)
-    - ConcatRnx : concatène les fichiers RNX. On obtient un fichier RNX avec toutes les observations, ainsi que des fichiers journaliers.s
+# GNSS Buoy (School project)
 
-Pour Pride-PPP(vous devriez avoir le dossier Pride-PPP-Master)
-IMPORTANT: le contenu du fichier *.atx fourni doit être incorporé aux listes d'antennes (*.atx) du dossier Pride-PPP-Master/tables afin de comporter l'antenne utilisée
-           le contenue du fichier ocean_bouée doit être incorporé au fichier océan du dossier Pride-PPP-Master/tables afin d'utiliser la surcharge océanique.
+## Description
+
+## Software
+This repository contains all the files necessary to deploy our system on a Raspberry Pi (preferably Zero W or Zero 2).
+
+Please code and comment your code in ENGLISH.
+
+The files are organised as follows :
+
+[insert description]
+
+## Hardware
+The hardware we used for this project is the following :
+
+  - 1 (or more) Raspberry Pi Zero 2, used to act as the entry point of our system
+  - 1 (or more) Ublox Ardusimple chip, used with an antenna for GNSS signal acquisiton
+  - 1 Intel NUC, used to host the server on wich any user can access the data from the Raspberry Pi

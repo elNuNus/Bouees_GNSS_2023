@@ -9,7 +9,9 @@ Please code and comment your code in ENGLISH.
 
 The files are organised as follows :
 
-[insert description]
+  - do_log.py : programme for logging sensor data. program used to record data from the sensors. It uses as input the sensor configurations indicated in the log.conf file.
+  - log.conf : configuration file for logging raw data (read in do_log.py)
+  - gnsstime.py : python library for date and time management
 
 ## Hardware
 The hardware we used for this project is the following :

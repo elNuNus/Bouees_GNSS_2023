@@ -27,8 +27,9 @@ The files are organised as follows :
 ## Hardware
 The hardware we used for this project is the following :
 
-  - 1 (or more) Raspberry Pi Zero 2, used to act as the entry point of our system
-  - 1 (or more) Ublox Ardusimple chip, used with an antenna for GNSS signal acquisiton
+  - 1 Raspberry Pi Zero 2, used to act as the entry point of our system
+  - 1 Ublox Ardusimple chip, used with an antenna for GNSS signal acquisiton
+  - 1 weather sensor (BME 280 Environmental Sensor : https://www.waveshare.com/wiki/BME280_Environmental_Sensor)
   - 1 Intel NUC, used to host the server on wich any user can access the data from the Raspberry Pi
 
 ## Web Interface

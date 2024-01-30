@@ -9,7 +9,7 @@ Our goal is to make a low-cost GNSS buoy system for various weather measurements
 
 ### Modifications from the previous project
 This project is a "reboot" of a previous 3rd year project (hence the fork from https://github.com/Zackary-Vanche/Bouees_GNSS). We made a couple modifications, described below.
-- __remote access to acquired data__ : the buoy system will send via cellular network its acquired data to a remote server (hosted on an Intel NUC), which will then be accessible for any user. See the *Web Interface* section for more information.
+- __remote access to acquired data__ : the buoy system will send via cellular network its acquired data to a remote server (hosted on an Intel NUC), which will then be accessible for any user. See the [Web Interface](https://github.com/elNuNus/Bouees_GNSS_2023/tree/main?tab=readme-ov-file#web-interface) section for more information.
 - __a WiFi remote switch__ : we want any user to remotely access a buoy without the need of a wired connection. The Raspberry will act as a WiFi access point which the user can connect to. We will use a Bluetooth connection to trigger the Access Point activation.
 - __on board mode__ : this is the main difference from the previous project. Instead of "dropping" the buoy somewhere at sea, and waiting for it to acquire data, the system will be able to transmit almost "real-time" data while onboard a sea vehicule. Note that, in this use case, the system will be connected to an onboard energy source, too.
 >If connected to the internet, the system will connect to the remote server and send its data.
@@ -33,4 +33,4 @@ The hardware we used for this project is the following :
 
 ## Web Interface
 This is the interface hosted on a remote server (we use an Intel NUC), which will gather sensor information from one (or more) buoy system(s).
-Please see our Web Interface repository for additional information : https://github.com/AhmadSaad2003/Bouee_GNSS_Web_Interface)https://github.com/AhmadSaad2003/Bouee_GNSS_Web_Interface
+Please see our Web Interface repository for additional information : https://github.com/AhmadSaad2003/Bouee_GNSS_Web_Interface/tree/master

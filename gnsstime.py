@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+Python library for date and time management.
+"""
+
 import numpy as np
 import datetime as dt
 

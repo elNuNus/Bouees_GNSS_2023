@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-[description]
+Program used for logging and recording data from the sensors.
+It uses as input the sensor configurations indicated in the log.conf file.
 author : Pierre BOSSER
 """
 

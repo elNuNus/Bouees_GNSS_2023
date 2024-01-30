@@ -1,6 +1,16 @@
 # GNSS Buoy (School project)
 
 ## Description
+This is our 2nd year engineering school project, directed by @pbosser.
+
+Our goal is to make a low-cost GNSS buoy system for various weather measurements.
+>(The original project was written and documented in French, and we chose to write everything in English so that anyone can replicate our project.)
+
+This project is a "reboot" of a previous 3rd year project (hence the fork from https://github.com/Zackary-Vanche/Bouees_GNSS). We made a couple modifications, described below.
+- __remote access to acquired data__ : the buoy system will send via cellular network its acquired data to a remote server, which will then be accessible for any user.
+- __a WiFi remote switch__ : we want any user to remotely access a buoy without the need of a wired connection. The Raspberry will act as a WiFi access point which the user can connect to. We will use a Bluetooth connection to trigger the Access Point activation.
+
+
 
 ## Software
 This repository contains all the files necessary to deploy our system on a Raspberry Pi (preferably Zero W or Zero 2).

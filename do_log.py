@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+[description]
+author : Pierre BOSSER
+"""
+
 
 import sys
 import os
@@ -24,12 +29,12 @@ class logCfg():
     ubx , 3600, gpspipe -R, ./ubx/ , raw_%s.ubx
     nmea,   60, gpspipe -r, ./nmea/, raw_%s.nmea
     met ,   60, echo "met", ./met/ , raw_%s.met
-    
-    name : nom du type de données à enregistrer
-    dt : durée des données par fichier
-    cmd : commande shell utilisée pour récupérer les données
-    praw : répertoire root dans lequel les données seront enresitrées (puis yyyy/day-of-year)
-    nraw : nom du fichier enresitré ; le caractère %s permettra de mettre une date en suffixe
+
+    name : name of the data type to be recorded
+    dt : duration of data per file
+    cmd : shell command used to retrieve data
+    praw : root directory in which the data will be stored (then yyyy/day-of-year)
+    nraw : name of the recorded file; the character %s will allow to put a date in suffix
     """
     try:
       cfg = np.genfromtxt(fcfg,delimiter=',',dtype=str)
@@ -46,12 +51,13 @@ class logCfg():
 
 def log_raw_data(name, dt,cmd,praw,nraw):
   """
-  Enregistrement de données brutes, sur des fichiers de durée dt, commençant à date ronde.
-  Les fichiers sont datés en temps GPS (UTC+n s). si le fichier existe déjà, il est écrasé
-  dt : durée de l'enregistrement
-  cmd : commande dont la sortie standard sera rédigée vers le fichier en sortie
-  praw : répertoire dans lequel les données seront sotckées en yyyy/doy
-  nraw : nom du fichier d'enregistrement sous la forme *%s.* ou %s est un motif permettant de renseigner la date de l'enregistrement
+  Raw data recording, on files of duration dt, starting at a round date.
+  Files are dated in GPS time (UTC+n s). If the file already exists, it is overwritten.
+
+  dt : recording duration
+  cmd : command whose standard output will be written to the output file
+  praw : directory in which the data will be stored in yyyy/day
+  nraw : name of the recording file in the form *%s.* where %s is a pattern for entering the recording date
   """
   tnow_utc = np.ceil(gti.now())
   tnow_gpst = gti.utc2gps(tnow_utc)
@@ -74,10 +80,10 @@ def log_raw_data(name, dt,cmd,praw,nraw):
 
 def zip_raw_data(name,dt,cmd,praw,nraw):
   """
-  dt : durée de l'enregistrement
-  cmd : commande dont la sortie standard sera rédigée vers le fichier en sortie
-  praw : répertoire dans lequel les données seront sotckées en yyyy/doy
-  nraw : nom du fichier d'enregistrement sous la forme *%s.* ou %s est un motif permettant de renseigner la date de l'enregistrement
+  dt : recording duration
+  cmd : command whose standard output will be written to the output file
+  praw : directory in which the data will be stored in yyyy/day
+  nraw : name of the recording file in the form *%s.* where %s is a pattern for entering the recording date
   """
   tnow_utc = np.ceil(gti.now())
   tnow_gpst = gti.utc2gps(tnow_utc)

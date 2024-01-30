@@ -238,7 +238,7 @@ def sec2dt64(sec):
   return dt64
 
 def sec2mth(sec):
-  """ renvoie année + mois décimal : 0->11.9999999 """
+  """ returns month + year in decimal : 0->11.9999999 """
   t=GnssTime()
   t.from_sec(sec)
   return t.mth()

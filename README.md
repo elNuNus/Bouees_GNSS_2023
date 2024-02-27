@@ -17,7 +17,7 @@ This project is a "reboot" of a previous 3rd year project (hence the fork from h
 ## Software
 This repository contains all the files necessary to deploy our system on a Raspberry Pi (preferably Zero W or Zero 2).
 
-__--Please code and comment your code in ENGLISH.--__
+__Please code and comment your code in ENGLISH__
 
 The files are organised as follows :
   - do_log.py : program used for logging and recording data from the sensors. It uses as input the sensor configurations indicated in the log.conf file.
@@ -36,4 +36,4 @@ The hardware we used for this project is the following :
 
 ## Web Interface
 This is the interface hosted on a remote server (we use an Intel NUC), which will gather sensor information from one (or more) system(s).
-Please see our Web Interface repository for additional information : https://github.com/AhmadSaad2003/Bouee_GNSS_Web_Interface/tree/master
+Please see our Web Interface repository for additional information : https://github.com/AhmadSaad2003/Bouee_GNSS_Web_Interface/
